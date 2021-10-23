@@ -9,9 +9,13 @@ enter the module you need inside memory.GetModuleAddress ("module.dll"),
 after which you will receive information about the address of the module in memory.
 
 To read a piece of memory, create a variable with the filling method
+
 for example
 
 memory.Read <uintptr_t> (0x421E119).
 
 To edit memory, pass to the variable a method with the memory offset and information to be placed, 
-for example: memory.Write <uintptr_t> (0x421E119,15).
+
+for example: 
+
+memory.Write <uintptr_t> (0x421E119,15).
